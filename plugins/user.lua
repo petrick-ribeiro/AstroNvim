@@ -9,4 +9,26 @@ return {
   --     require("lsp_signature").setup()
   --   end,
   -- },
+  --
+    -- "mfussenegger/nvim-jdtls", -- load jdtls on module
+    -- {
+    --   "williamboman/mason-lspconfig.nvim",
+    --   opts = {
+    --     ensure_installed = { "jdtls" },
+    --   },
+    -- },
+    
+  -- Colorschemes
+    {
+      "catppuccin/nvim",
+      name = "catppuccin",
+      config = function()
+        require("catppuccin").setup {}
+      end,
+    },
+    
+    {
+      "shaunsingh/nord.nvim",
+      name = "nord",
+    },
 }
