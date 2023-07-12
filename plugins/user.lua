@@ -17,7 +17,10 @@ return {
     --     ensure_installed = { "jdtls" },
     --   },
     -- },
-    
+  
+  "AstroNvim/astrocommunity",
+  {import = "astrocommunity.code-runner.sniprun"},
+  
   -- Colorschemes
     {
       "catppuccin/nvim",
@@ -30,5 +33,8 @@ return {
     {
       "shaunsingh/nord.nvim",
       name = "nord",
+      init = function()
+        vim.g.nord_disable_background = true
+      end,
     },
 }
