@@ -17,24 +17,13 @@ return {
     --     ensure_installed = { "jdtls" },
     --   },
     -- },
-  
-  "AstroNvim/astrocommunity",
-  {import = "astrocommunity.code-runner.sniprun"},
-  
   -- Colorschemes
-    {
-      "catppuccin/nvim",
-      name = "catppuccin",
-      config = function()
-        require("catppuccin").setup {}
-      end,
-    },
-    
-    {
-      "shaunsingh/nord.nvim",
-      name = "nord",
-      init = function()
-        vim.g.nord_disable_background = true
-      end,
-    },
+  -- {
+  --   "arcticicestudio/nord-vim",
+  --   name = "nord",
+  -- },
+  {
+    "rmehri01/onenord.nvim",
+    name = "onenord",
+  },
 }

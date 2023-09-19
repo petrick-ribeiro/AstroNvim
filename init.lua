@@ -19,7 +19,6 @@ return {
 
   -- Set colorscheme to use
   colorscheme = "nord",
-
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
   diagnostics = {
     virtual_text = true,
@@ -35,7 +34,6 @@ return {
       --   enabled = true, -- enable or disable format on save globally
       --   allow_filetypes = { -- enable format on save for specified filetypes only
       --     "go",
-      --     "java",
       --   },
       --   ignore_filetypes = { -- disable format on save for specified filetypes
       --     -- "python",
@@ -54,7 +52,6 @@ return {
     servers = {
       -- "pyright"
     },
-
   },
 
   -- Configure require("lazy").setup() options
@@ -72,6 +69,9 @@ return {
   -- augroups/autocommands and custom filetypes also this just pure lua so
   -- anything that doesn't fit in the normal config locations above can go here
   polish = function()
+    -- vim.cmd([[set guicursor= ]])
+      -- vim.g.nord_disable_background = true
+      -- require("nord").set()
     -- Set up custom filetypes
     -- vim.filetype.add {
     --   extension = {
