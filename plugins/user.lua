@@ -22,8 +22,4 @@ return {
   --   "arcticicestudio/nord-vim",
   --   name = "nord",
   -- },
-  {
-    "rmehri01/onenord.nvim",
-    name = "onenord",
-  },
 }
