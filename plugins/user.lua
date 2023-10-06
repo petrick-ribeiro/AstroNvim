@@ -9,17 +9,21 @@ return {
   --     require("lsp_signature").setup()
   --   end,
   -- },
-  --
-    -- "mfussenegger/nvim-jdtls", -- load jdtls on module
-    -- {
-    --   "williamboman/mason-lspconfig.nvim",
-    --   opts = {
-    --     ensure_installed = { "jdtls" },
-    --   },
-    -- },
-  -- Colorschemes
-  -- {
-  --   "arcticicestudio/nord-vim",
-  --   name = "nord",
-  -- },
+  {
+    "ray-x/web-tools.nvim",
+    require("web-tools").setup {
+      keymaps = {
+        rename = nil, -- by default use same setup of lspconfig
+        repeat_rename = ".", -- . to repeat
+      },
+      hurl = { -- hurl default
+        show_headers = false, -- do not show http headers
+        floating = false, -- use floating windows (need guihua.lua)
+        formatters = { -- format the result by filetype
+          json = { "jq" },
+          html = { "prettier", "--parser", "html" },
+        },
+      },
+    },
+  },
 }

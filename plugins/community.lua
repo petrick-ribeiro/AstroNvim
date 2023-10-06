@@ -6,6 +6,7 @@ return {
   -- { import = "astrocommunity.completion.copilot-lua-cmp" },
   --
   -- LSP
+  { import = "astrocommunity.programming-language-support.web-tools-nvim" },
   { import = "astrocommunity.pack.java" },
   { import = "astrocommunity.pack.go" },
   { import = "astrocommunity.pack.rust" },
@@ -27,4 +28,5 @@ return {
   -- Utils
   { import = "astrocommunity.code-runner.sniprun" },
   { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" },
+  { import = "astrocommunity.terminal-integration.flatten-nvim" },
 }
