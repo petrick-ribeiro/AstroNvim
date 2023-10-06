@@ -28,5 +28,4 @@ return {
   -- Utils
   { import = "astrocommunity.code-runner.sniprun" },
   { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" },
-  { import = "astrocommunity.terminal-integration.flatten-nvim" },
 }
