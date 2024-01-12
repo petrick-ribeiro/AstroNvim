@@ -70,8 +70,9 @@ return {
   -- anything that doesn't fit in the normal config locations above can go here
   polish = function()
     -- vim.cmd([[set guicursor= ]])
-      -- vim.g.nord_disable_background = true
-      -- require("nord").set()
+    vim.cmd [[ set wrap ]]
+    -- vim.g.nord_disable_background = true
+    -- require("nord").set()
     -- Set up custom filetypes
     -- vim.filetype.add {
     --   extension = {
